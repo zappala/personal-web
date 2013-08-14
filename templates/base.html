@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Internet Research Lab</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/static/img/favicon.ico">
+    <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'>
+    <link href="/static/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/static/css/bootstrap-responsive.min.css" rel="stylesheet">
+    <link href="/static/css/app.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+  </head>
+  <body>
+    {% block header %}
+    <div class="navbar">
+      <div class="navbar-inner">
+	<div class="container">
+	  <div class="row-fluid">
+	    <div class="span8">
+	      <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+		<span class="icon-bar"></span>
+		<span class="icon-bar"></span>
+		<span class="icon-bar"></span>
+	      </a>
+	      <div class="logo">Z</div>
+	      <span class="brand">Daniel Zappala<br><span class="title">Associate Professor</span></span>
+	      <div class="nav-collapse collapse">
+		<ul class="nav nav-pills">
+		  <li id="menu-home" {% if active == "index" %}class="active"{% endif %}><a href={{url_for("index")}}>Home</a></li>
+		  <li id="menu-research" {% if active == "research" %}class="research"{% endif %}><a href={{url_for("show",directory="research")}} >Teaching</a></li>
+		  <li id="menu-research" {% if active == "research" %}class="research"{% endif %}><a href={{url_for("show",directory="research")}} >Research</a></li>
+		  <li id="menu-software" {% if active == "software" %}class="active"{% endif %}><a href={{url_for("show",directory="software")}} >Software</a></li>
+		  <li id="menu-publications" {% if active == "publications" %}class="active"{% endif %}><a href={{url_for("show",directory="publications")}} >Publications</a></li>
+		  <li id="menu-people" {% if active == "schedule" %}class="active"{% endif %}><a href={{url_for("show",directory="schedule")}} >Schedule</a></li>
+		</ul>
+	      </div>
+	    </div>
+	    <div id="affiliation" class="span4">
+	      <span class="affiliation"><a href="http://byu.edu">BYU</a>
+		| <a href="http://cs.byu.edu">Computer Science</a></span>
+	    </div>
+	  </div>
+	</div>
+      </div>
+    </div>
+    {% endblock %}
+
+    <div id="page">
+      {% block page %}{% endblock %}
+    </div>
+
+    {% block footer %}
+    <div id="footer">
+      <div class="banner2 pad10">
+	<div class="container">
+	  <div class="row-fluid">
+	    <div class="span12 padtop10">
+	      <div id="license" class="left">
+		<a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-sa/3.0/88x31.png" /></a> 
+	      </div>
+	      <div class="left pad-left-10">
+		<p>&copy 2013 Internet Research Lab<br>
+		  The design of these web pages is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/deed.en_US">Creative Commons Attribution-ShareAlike 3.0 Unported License</a>.</p>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+      </div>
+    </div>
+
+    {% endblock %}
+
+    <script src="/static/js/bootstrap.min.js"></script>
+
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-38419970-5', 'citizenbudget.org');
+ga('send', 'pageview');
+
+</script>
+
+  </body>
+</html>
