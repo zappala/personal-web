@@ -16,9 +16,9 @@
    version="1.1"
    inkscape:version="0.48.4 r9939"
    sodipodi:docname="favicon.svg"
-   inkscape:export-filename="/home/zappala/Software/ilab-web/static/img/logo.png"
-   inkscape:export-xdpi="84.190002"
-   inkscape:export-ydpi="84.190002">
+   inkscape:export-filename="/home/zappala/Software/personal-web/static/img/favicon.png"
+   inkscape:export-xdpi="89.848381"
+   inkscape:export-ydpi="89.848381">
   <defs
      id="defs4">
     <linearGradient
@@ -144,7 +144,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
