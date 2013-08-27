@@ -1,7 +1,8 @@
 /* General */
 
 body {
-    font-family: 'Lato' !important;
+/*    font-family: 'Lato' !important;*/
+    font-family: 'Open Sans' !important;
 }
 
 .container {
@@ -11,12 +12,6 @@ body {
     margin-top: 20px;
 }
 
-.container-slim {
-    width: 70%;
-    max-width: 800px;
-}
-
-
 /* Menu */
 
 #sidebar {
@@ -24,18 +19,7 @@ body {
     text-align: right;
 }
 
-.logo {
-    float: right;
-    border: none;
-    margin-right: 10px;
-    margin-top: 3px;
-    font-size: 2em;
-    font-weight: bold;
-    line-height: 1em;
-}
-
 .brand {
-    float: right;
     color: #333;
     font-size: 1.2em;
     font-weight: bold;
@@ -149,8 +133,21 @@ ul.menu li.active {
 
 h1 {
     font-size: 1.2em;
-    color: #333;
+    background-color: #333;
+    color: white;
+    padding: 0 5px;
+    margin-bottom: 10px;
+    text-align: center;
+    font-weight: normal;
+}
+
+h1.plain {
     margin-bottom: 0px;
+    padding: 0px;
+    text-align: left;
+    color: #333;
+    background-color: white;
+    font-weight: normal;
 }
 
 h2 {
@@ -158,13 +155,28 @@ h2 {
     margin-bottom: 0px;
 }
 
+h3 {
+    font-size: 1.2em;
+    color: #333;
+    margin-bottom: 0px;
+    background-color: #e4e4e4;
+    padding: 0 5px;
+    margin-bottom: 10px;
+    text-align: center;
+    font-weight: normal;
+}
+
 hr {
     margin-left: 120px;
     margin: 10px 0px 10px 120px;
 }
 
-.top {
+.minus {
     margin-top: -10px;
+}
+
+.top {
+    margin-top: 0px;
 }
 
 .big {

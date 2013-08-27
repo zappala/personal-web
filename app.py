@@ -33,11 +33,17 @@ def schedule():
         schedule[day] = {}
         for time in times:
             schedule[day][time] = ''
+    # classes
     add(schedule,'MWF','1:00','CS 660')
     add(schedule,'MWF','3:00','CS 360')
     add(schedule,'MWF','4:00','Office Hours')
+    # faculty meetings
     add(schedule,'T','11:00','Devotional')
     add(schedule,'H','11:00','Colloquium')
+    # research meetings
+    add(schedule,'W','10:00','Security')
+    add(schedule,'W','2:00','Wireless Ideas')
+    add(schedule,'F','12:00','Computational Health')
     return render_template('schedule.html',active='schedule',
                            times=times,days=days,schedule=schedule)
 
