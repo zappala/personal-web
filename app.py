@@ -41,9 +41,9 @@ def schedule():
     add(schedule,'T','11:00','Devotional')
     add(schedule,'H','11:00','Colloquium')
     # research meetings
+    add(schedule,'H','12:30','John Slagle')
     add(schedule,'W','10:00','Security')
     add(schedule,'W','2:00','Wireless Ideas')
-    add(schedule,'F','12:00','Computational Health')
     return render_template('schedule.html',active='schedule',
                            times=times,days=days,schedule=schedule)
 
