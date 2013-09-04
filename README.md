@@ -9,6 +9,7 @@ The pages are built using:
 - [Flask](http://flask.pocoo.org/)
 - [Frozen-Flask](http://pythonhosted.org/Frozen-Flask/)
 - [Twitter Bootstrap](http://twitter.github.io/bootstrap/)
+- [DoIt](http://pydoit.org/)
 
 Use
 
@@ -18,7 +19,12 @@ to start a local server with the web pages, and
 
 > python app.py build
 
-to build a static set of pages you can place on any web server.
+to build a static set of pages you can place on any web server. To
+deploy, edit dodo.py and use
+
+> doit
+
+to rsync the pages to a remote server.
 
 Copyright
 ---------

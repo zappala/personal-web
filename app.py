@@ -40,10 +40,11 @@ def schedule():
     add(schedule,'MWF','3:00','CS 360')
     add(schedule,'MWF','4:00','Office Hours')
     # faculty meetings
+    add(schedule,'T','9:00','Computing Committee')
     add(schedule,'T','11:00','Devotional')
     add(schedule,'H','11:00','Colloquium')
     # research meetings
-    add(schedule,'H','12:30','John Slagle')
+    add(schedule,'H','1:00','John Slagle')
     add(schedule,'W','10:00','Security')
     add(schedule,'W','2:00','Wireless Ideas')
     return render_template('schedule.html',active='schedule',

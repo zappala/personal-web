@@ -18,29 +18,21 @@
 	<div class="span2">
 	</div>
 	{% for day in days %}
-	<div class="span2 schedule">
-	  <div class="day">
+	<div class="span2 day">
 	  {{ day }}
-	  </div>
 	</div>
 	{% endfor %}
       </div>
       {% for time in times %}
-      <div class="row-fluid">
-	<div class="span2 schedule">
+      <div class="row-fluid schedule borders">
+	<div class="span2">
 	  <div class="time">
 	    {{ time }}
 	  </div>
 	</div>
 	{% for day in days %}
-	<div class="span2 schedule">
-	  <div class="item">
-	  {% if schedule[day][time] %}
+	<div class="span2 item {% if schedule[day][time] %}filled{% endif %}">
 	  {{ schedule[day][time] }}
-	  {% else %}
-	    &nbsp;
-	  {% endif %}
-	  </div>
 	</div>
 	{% endfor %}
       </div>
