@@ -6,6 +6,8 @@ from flask_frozen import Freezer
 app = Flask(__name__)
 freezer = Freezer(app)
 
+app.config['FREEZER_DEFAULT_MIMETYPE'] = 'text/html'
+
 @app.route('/')
 def index():
     return render_template('index.html',active='index')
@@ -51,14 +53,20 @@ def schedule():
 @app.route('/<directory>',defaults={'page':''})
 @app.route('/<directory>/<page>')
 def show(directory,page):
-    if not page:
-        return render_template(directory+'.html',active=directory)
-    return render_template(directory+"/" + page + '.html',active=directory)
-    
+    try:
+        if not page:
+            return render_template(directory+'.html',active=directory)
+        return render_template(directory+"/" + page + '.html',active=directory)
+    except:
+        return render_template('404.html'), 404
 
 @app.errorhandler(404)
 def page_not_found(error):
     return render_template('404.html'), 404
+
+@freezer.register_generator
+def custom404():
+    yield '/404'
 
 if __name__ == '__main__':
     if len(sys.argv) > 1 and sys.argv[1] == "build":
