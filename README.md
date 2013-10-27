@@ -16,6 +16,7 @@ First, create a virtual environment for pelican:
 ```
 sudo pip install virtualenv
 virtualenv ~/virtualenv/pelican
+source ~/virtualenv/pelican/bin/activate
 ```
 
 Then, install the required packages:
