@@ -13,8 +13,10 @@ The pages are built using:
 
 First, create a virtual environment for pelican:
 
-> sudo pip install virtualenv
-> virtualenv ~/virtualenv/pelican
+```
+sudo pip install virtualenv
+virtualenv ~/virtualenv/pelican
+```
 
 Then, install the required packages:
 
