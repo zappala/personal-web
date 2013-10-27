@@ -1,0 +1,6 @@
+[submodule "pelican-plugins"]
+	path = pelican-plugins
+	url = git@github.com:getpelican/pelican-plugins.git
+[submodule "themes/pelican-clear"]
+	path = themes/pelican-clear
+	url = git@github.com:zappala/pelican-clear.git
