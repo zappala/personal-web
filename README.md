@@ -20,29 +20,38 @@ virtualenv ~/virtualenv/pelican
 
 Then, install the required packages:
 
-> pip install -r requirements.txt
+```
+pip install -r requirements.txt
+```
 
 ## Use
 
 Use
 
-> fabric build
+```
+fabric build
+```
 
 to build the web pages. Alternatively, use
 
-> fab regenerate
+```
+fab regenerate
+```
 
 to automatically regenerate the pages when they are changed. To
 serve the pages, use
 
-> fab serve
+```
+fab serve
+```
 
 To publish, use
 
-> fab publish
+```
+fab publish
+```
 
-Copyright
----------
+## Copyright
 
 Copyright (c) 2013 Daniel Zappala
 
