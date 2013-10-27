@@ -37,5 +37,5 @@ City Council agenda items. I would love to get a `Code for America
 brigade <http://brigade.codeforamerica.org/>`__ started at BYU or in
 the Utah County area.
 
-My slides are here: `Civic Hacking </static/docs/utahjs.pdf>`__
+My slides are here: `Civic Hacking </docs/utahjs.pdf>`__
 

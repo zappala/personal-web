@@ -1,30 +1,43 @@
-Personal web pages
-==================
+# Personal web pages
 
 These are the web pages I use at my BYU home page,
 http://zappala.byu.edu.
 
 The pages are built using:
 
-- [Flask](http://flask.pocoo.org/)
-- [Frozen-Flask](http://pythonhosted.org/Frozen-Flask/)
-- [Twitter Bootstrap](http://twitter.github.io/bootstrap/)
-- [DoIt](http://pydoit.org/)
+- [Pelican](http://docs.getpelican.com/en/3.3.0/)
+- [Pelican Clear](https://github.com/zappala/pelican-clear)
+- [Fabric](http://docs.fabfile.org/en/1.8/)
+
+## Setup
+
+First, create a virtual environment for pelican:
+
+> sudo pip install virtualenv
+> virtualenv ~/virtualenv/pelican
+
+Then, install the required packages:
+
+> pip install -r requirements.txt
+
+## Use
 
 Use
 
-> python app.py
+> fabric build
 
-to start a local server with the web pages, and
+to build the web pages. Alternatively, use
 
-> python app.py build
+> fab regenerate
 
-to build a static set of pages you can place on any web server. To
-deploy, edit dodo.py and use
+to automatically regenerate the pages when they are changed. To
+serve the pages, use
 
-> doit
+> fab serve
 
-to rsync the pages to a remote server.
+To publish, use
+
+> fab publish
 
 Copyright
 ---------

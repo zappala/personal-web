@@ -23,7 +23,7 @@ Current Projects
 personal cloud system that transparently organizes all of the files on
 your mobile and home computing devices.
 
-.. image:: /static/images/cloud-vision.png
+.. image:: /images/cloud-vision.png
    :width: 400
 
 `Sentiment Analysis
@@ -32,7 +32,7 @@ how to automatically classify the political sentiment of tweets, so
 that we can better quantify political feelings of people around the
 world and track their changes over time.
 
-.. image:: /static/images/sentiment-us.png
+.. image:: /images/sentiment-us.png
    :width: 400
 
 `Wireless Networks
@@ -41,7 +41,7 @@ transport over wireless mesh networks, which can be used to provide
 emergency services for urban areas or community networking for cities
 and developing countries.
 
-.. image:: /static/images/wireless.png
+.. image:: /images/wireless.png
    :width: 400
 
 Past Research

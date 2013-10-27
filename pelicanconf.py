@@ -46,11 +46,11 @@ TAG_FEED_ATOM = 'feeds/tag-%s.atom.xml'
 
 # Misc
 STATIC_PATHS = ['images','docs']
-DEFAULT_PAGINATION = False
+DEFAULT_PAGINATION = 10
 
 # Theme
-USER_LOGO_URL = "/static/images/daniel-zappala.jpg"
-THEME = "themes/clear"
+USER_LOGO_URL = "/images/daniel-zappala.jpg"
+THEME = "themes/pelican-clear"
 
 # Plugins
 PLUGIN_PATH = 'pelican-plugins'

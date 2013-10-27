@@ -9,7 +9,7 @@ Software
 Software
 ========
 
-.. image:: /static/images/eff.png
+.. image:: /images/eff.png
    :height: 50
    :align: right
    :target: http://www.eff.org
