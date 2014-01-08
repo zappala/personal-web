@@ -18,7 +18,7 @@ appointment if you need extended time.
 
 **Monday**
 
-  :fw:`1:00` CS 660
+  :fw:`11:00` CS 460
 
   :fw:`3:00` CS 360
 
@@ -28,15 +28,13 @@ appointment if you need extended time.
 
   :fw:`9:00` Computing Committee
 
+  :fw:`10:00` Elham Vaziripour
+
   :fw:`11:00` Devotional
 
 **Wednesday**
 
-  :fw:`11:00` Security
-
-  :fw:`1:00` CS 660
-
-  :fw:`2:00` Wireless Ideas
+  :fw:`11:00` CS 460
 
   :fw:`3:00` CS 360
 
@@ -46,13 +44,11 @@ appointment if you need extended time.
 
   :fw:`11:00` Colloquium
 
-  :fw:`12:30` John Slagle
+  :fw:`4:30` Hackey Sack
 
 **Friday**
 
-  :fw:`9:00` Jason Dobry
-
-  :fw:`1:00` CS 660
+  :fw:`11:00` CS 460
 
   :fw:`3:00` CS 360
   
