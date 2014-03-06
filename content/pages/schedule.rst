@@ -36,6 +36,10 @@ appointment if you need extended time.
 
   :fw:`11:00` CS 460
 
+  :fw:`1:00` Internet - Security Joint Research
+
+  :fw:`2:00` Internet - IDEA Labs Joint Research
+
   :fw:`3:00` CS 360
 
   :fw:`4:00` Office Hours
