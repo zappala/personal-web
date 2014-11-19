@@ -18,31 +18,37 @@ appointment if you need extended time.
 
 **Monday**
 
-  :fw:`11:00` CS 460
+  :fw:`8:30` Internet - IDEA Labs Joint Research
+
+  :fw:`11:00` CS 660
+
+  :fw:`12:00` Internet - Security Joint Research
+
+  :fw:`1:00` Office Hours
+
+  :fw:`2:00` CS 360
 
   :fw:`3:00` CS 360
 
-  :fw:`4:00` Office Hours
-
 **Tuesday**
-
-  :fw:`9:00` Computing Committee
 
   :fw:`10:00` Elham Vaziripour
 
   :fw:`11:00` Devotional
 
+  :fw:`2:00` Computing Committee
+
 **Wednesday**
 
-  :fw:`11:00` CS 460
+  :fw:`11:00` CS 660
 
-  :fw:`1:00` Internet - Security Joint Research
+  :fw:`12:00` Internet - Security Joint Research
 
-  :fw:`2:00` Internet - IDEA Labs Joint Research
+  :fw:`1:00` Office Hours
+
+  :fw:`2:00` CS 360
 
   :fw:`3:00` CS 360
-
-  :fw:`4:00` Office Hours
 
 **Thursday**
 
@@ -52,11 +58,15 @@ appointment if you need extended time.
 
 **Friday**
 
-  :fw:`11:00` CS 460
+  :fw:`9:00` Internet - Security Joint Research
+
+  :fw:`11:00` CS 660
+
+  :fw:`1:00` Office Hours
+
+  :fw:`2:00` CS 360
 
   :fw:`3:00` CS 360
-  
-  :fw:`4:00` Office Hours
 
 
 
