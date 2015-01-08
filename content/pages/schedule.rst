@@ -20,53 +20,29 @@ appointment if you need extended time.
 
   :fw:`8:30` Internet - IDEA Labs Joint Research
 
-  :fw:`11:00` CS 660
-
-  :fw:`12:00` Internet - Security Joint Research
-
-  :fw:`1:00` Office Hours
-
-  :fw:`2:00` CS 360
-
-  :fw:`3:00` CS 360
-
 **Tuesday**
 
-  :fw:`10:00` Elham Vaziripour
+  :fw:`8:00` CS 460
+
+  :fw:`9:30` Dan Bunker
 
   :fw:`11:00` Devotional
 
-  :fw:`2:00` Computing Committee
 
 **Wednesday**
 
-  :fw:`11:00` CS 660
+  :fw:`12:00` Computing Committee
 
-  :fw:`12:00` Internet - Security Joint Research
-
-  :fw:`1:00` Office Hours
-
-  :fw:`2:00` CS 360
-
-  :fw:`3:00` CS 360
+  :fw:`1:00`  Systems Committee
 
 **Thursday**
 
+  :fw:`8:00` CS 460
+
+  :fw:`9:30` Dan Bunker
+
   :fw:`11:00` Colloquium
 
-  :fw:`4:30` Hackey Sack
-
 **Friday**
-
-  :fw:`9:00` Internet - Security Joint Research
-
-  :fw:`11:00` CS 660
-
-  :fw:`1:00` Office Hours
-
-  :fw:`2:00` CS 360
-
-  :fw:`3:00` CS 360
-
 
 

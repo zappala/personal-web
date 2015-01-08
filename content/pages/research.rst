@@ -18,6 +18,14 @@ Internet (measurement, social networking).
 Current Projects
 ----------------
 
+`Web Security <http://internet.byu.edu/research/web-security>`__: Measuring
+the prevalence of TLS proxies and designing tools to detect them and notify
+users. We will be designing new web authentication methods to provide
+improved trust on the Internet.
+
+.. image:: /images/tls-proxy-measurement.png
+   :width: 400
+
 `Personal Cloud Computing
 <http://internet.byu.edu/research/personal-cloud>`__: Designing a
 personal cloud system that transparently organizes all of the files on
@@ -35,18 +43,9 @@ world and track their changes over time.
 .. image:: /images/sentiment-us.png
    :width: 400
 
-`Wireless Networks
-<http://internet.byu.edu/research/wireless-networks>`__: Improving
-transport over wireless mesh networks, which can be used to provide
-emergency services for urban areas or community networking for cities
-and developing countries.
-
-.. image:: /images/wireless.png
-   :width: 400
-
 Past Research
 -------------
 
-Past research topics include streaming video algorithms, peer-to-peer
-networking, and multicast routing. See `Publications
-<|filename|publications.rst>`__ for more details.
+Past research topics include wireless networks, streaming video
+algorithms, peer-to-peer networking, and multicast routing. See
+`Publications <|filename|publications.rst>`__ for more details.

@@ -12,10 +12,12 @@ Teaching and Research
 
 I teach courses in Internet Programming and Computer Networking.  I
 also direct the `Internet Research Lab <http://internet.byu.edu>`__,
-where we are exploring personal cloud computing, social networking,
-and wireless networks.  I am looking for good undergraduate
-and graduate students interested in solving challenging problems in this area.
-See my `teaching page <|filename|teaching.rst>`__ and my `research page
+where we conduct research on Internet applications and infrastructure.
+Our current projects involve Internet measurements, security, personal
+cloud computing, and social networking. I am looking for good
+undergraduate and graduate students interested in solving challenging
+problems in this area.  See my `teaching page
+<|filename|teaching.rst>`__ and my `research page
 <|filename|research.rst>`__ for more details.
 
 
@@ -51,8 +53,8 @@ Community Service
 I serve on the city council of `Cedar Hills
 <http://cedarhills.org>`__, where my responsibilities include finances
 and open government. I also sit on the board for `Utah Valley Dispatch
-<http://www.utahvalley911.org/>`__ and the `North Utah Valley Animal
-Shelter <http://northutahvalleyanimalshelter.org/>`__.
+<http://www.utahvalley911.org/>`__ and the Lone Peak Public Safety District,
+which includes the `Lone Peak Police <http://www.lonepeakpolice.com/>`__ and `Lone Peak Fire <http://lonepeakfire.com/>`__ Departments.
 
 Reforming Software Patents
 ==========================

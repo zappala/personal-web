@@ -53,8 +53,8 @@ USER_LOGO_URL = "/images/daniel-zappala.jpg"
 THEME = "themes/pelican-clear"
 
 # Plugins
-PLUGIN_PATH = 'pelican-plugins'
-PLUGINS = ['assets','neighbors']
+PLUGIN_PATHS = ['pelican-plugins']
+PLUGINS = ['neighbors']
 
 # Comments
 DISQUS_SITENAME	= 'zappala'

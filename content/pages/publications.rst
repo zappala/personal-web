@@ -46,6 +46,38 @@ Journals
 Conferences and Workshops
 -------------------------
 
+- Daniel Zappala, Using Visualization and Search to Locate Genealogy
+  Holes, 13th Annual Family History Technology Workshop, March 2013.
+
+- Randy Buck, Rich Lee, Phil Lundrigan and Daniel Zappala, WiFu: A
+  Composable Toolkit for Experimental Wireless Transport Protocols,
+  IEEE International Conference on Mobile Ad Hoc and Sensor Systems
+  (MASS), October 2012.
+
+- Charles Knutson and Daniel Zappala, The Twenty Minute Genealogist:
+  Assisting Family History Research through Navigation and Context
+  Preservation, 12th Annual Family History Technology Workshop,
+  March 2012.
+
+- Travis Andelin, Vasu Chetty, Devon Harbaugh, Sean Warnick and Daniel
+  Zappala, Quality selection for Dynamic Adaptive Streaming over HTTP
+  with Scalable Video Coding, 3rd ACM Multimedia Systems Conference
+  (MMSys), February 2012, pages 149--154.
+
+- David Ripplinger, Sean Warnick and Daniel Zappala, First Principles
+  Modeling of Wireless Networks for Rate Control, 50th IEEE Conference
+  on Decision and Control (CDC), December 2011.
+
+- Xingang Zhang, Randy Buck, and Daniel Zappala, Experimental
+  Performance Evaluation of ATP in a Wireless Mesh Network, IEEE
+  International Conference on Mobile Ad Hoc and Sensor Systems (MASS),
+  October 2011.
+
+- Lei Wang, David Ripplinger, Anurag Rai, Sean Warnick, and Daniel
+  Zappala, A Convex Optimization Approach to Decentralized Rate
+  Control in Wireless Networks with Partial Interference, 49th
+  IEEE Conference on Decision and Control (CDC), December 2010.
+
 - Brian Sanderson and Daniel Zappala, `Reducing Source Load in
   BitTorrent </static/pubs/bittorrent-seed-load-icccn09.pdf>`__, The
   18th International Conference on Computer Communications and
