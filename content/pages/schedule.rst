@@ -20,6 +20,8 @@ appointment if you need extended time.
 
   :fw:`8:30` Internet - IDEA Labs Joint Research
 
+  :fw:`1:00`  Javascript 498R
+
 **Tuesday**
 
   :fw:`8:00` CS 460
