@@ -10,6 +10,7 @@ Software
 ========
 
 .. image:: /images/eff.png
+   :alt: Electronic Freedom Foundation
    :height: 50
    :align: right
    :target: http://www.eff.org

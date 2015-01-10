@@ -20,7 +20,7 @@ open source apps. Open City Apps focuses on developing apps for
 Chicago, and has an impressive set of deployed services. Code for
 America hosts fellows in San Francisco to build open source apps, and
 helps them spin these into startups. Other organizations, such as the
-`Sunlight Foundation <Sunlight Foundation OpenGov Grants>`__ and the
+`Sunlight Foundation <http://sunlightfoundation.com/about/grants/opengovgrants/>`__ and the
 `Knight Foundation
 <http://www.knightfoundation.org/funding-initiatives/tech-engagement/>`__,
 are offering grants to encourage more civic hacking.

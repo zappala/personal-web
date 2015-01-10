@@ -32,6 +32,7 @@ personal cloud system that transparently organizes all of the files on
 your mobile and home computing devices.
 
 .. image:: /images/cloud-vision.png
+   :alt: Personal Cloud Computing
    :width: 400
 
 `Sentiment Analysis
@@ -41,6 +42,7 @@ that we can better quantify political feelings of people around the
 world and track their changes over time.
 
 .. image:: /images/sentiment-us.png
+   :alt: Political Sentiment Analysis
    :width: 400
 
 Past Research
