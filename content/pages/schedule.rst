@@ -18,9 +18,11 @@ appointment if you need extended time.
 
 **Monday**
 
-  :fw:`8:30` Internet - IDEA Labs Joint Research
+  :fw:`11:00` Security Group
 
   :fw:`1:00`  Javascript 498R
+
+  :fw:`2:00`  Justin Wu
 
 **Tuesday**
 
@@ -28,10 +30,16 @@ appointment if you need extended time.
 
   :fw:`9:30` Dan Bunker
 
+  :fw:`10:00` Office Hours
+
   :fw:`11:00` Devotional
+
+  :fw:`1:00` Elham
 
 
 **Wednesday**
+
+  :fw:`11:00` Security Group
 
   :fw:`12:00` Computing Committee
 
@@ -43,8 +51,15 @@ appointment if you need extended time.
 
   :fw:`9:30` Dan Bunker
 
+  :fw:`10:00` Office Hours
+
   :fw:`11:00` Colloquium
 
+  :fw:`2:00`  Justin Wu
+
 **Friday**
+
+  :fw:`8:00` Working from Home
+
 
 
