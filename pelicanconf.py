@@ -45,7 +45,8 @@ FEED_DOMAIN = SITEURL
 TAG_FEED_ATOM = 'feeds/tag-%s.atom.xml'
 
 # Misc
-STATIC_PATHS = ['images','docs','lib']
+ARTICLE_PATHS = ['blog']
+STATIC_PATHS = ['images','docs','lib','talks']
 DEFAULT_PAGINATION = 10
 
 # Theme
