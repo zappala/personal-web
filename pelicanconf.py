@@ -45,7 +45,7 @@ FEED_DOMAIN = SITEURL
 TAG_FEED_ATOM = 'feeds/tag-%s.atom.xml'
 
 # Misc
-STATIC_PATHS = ['images','docs']
+STATIC_PATHS = ['images','docs','lib']
 DEFAULT_PAGINATION = 10
 
 # Theme
@@ -53,7 +53,7 @@ USER_LOGO_URL = "/images/daniel-zappala.jpg"
 THEME = "themes/pelican-clear"
 
 # Plugins
-PLUGIN_PATHS = ['pelican-plugins']
+PLUGIN_PATHS = ['plugins']
 PLUGINS = ['neighbors']
 
 # Comments

@@ -15,6 +15,10 @@ env.cloudfiles_username = 'my_rackspace_username'
 env.cloudfiles_api_key = 'my_rackspace_api_key'
 env.cloudfiles_container = 'my_cloudfiles_container'
 
+def setup():
+    local('virtualenv env')
+    with prefix('source env/bin/activate'):
+        local('pip install -r requirements.txt')
 
 def clean():
     if os.path.isdir(DEPLOY_PATH):

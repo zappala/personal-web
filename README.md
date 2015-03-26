@@ -11,18 +11,23 @@ The pages are built using:
 
 ## Setup
 
-First, create a virtual environment for pelican:
+First, install required packages, if you don't already have them:
 
 ```
+sudo yum install fabric python-pip python-devel
 sudo pip install virtualenv
-virtualenv ~/virtualenv/pelican
-source ~/virtualenv/pelican/bin/activate
 ```
 
-Then, install the required packages:
+Next, run:
 
 ```
-pip install -r requirements.txt
+fab setup
+```
+
+Then, activate the virtual environment
+
+```
+source env/bin/activate
 ```
 
 ## Use
