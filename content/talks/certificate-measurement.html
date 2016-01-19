@@ -1,0 +1,416 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+
+    <title>Measurements and Certificate-Based Authentication</title>
+
+    <meta name="description" content="Measurements and Certificate-Based Authentication">
+    <meta name="author" content="Daniel Zappala">
+
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+    <link rel="stylesheet" href="/lib/foundation-icons/foundation-icons.css">
+    <link rel="stylesheet" href="/lib/reveal.js-3.0.0/css/reveal.css">
+    <link rel="stylesheet" href="/lib/reveal.js-3.0.0/css/theme/black.css" id="theme">
+
+    <!-- Code syntax highlighting -->
+    <link rel="stylesheet" href="/lib/reveal.js-3.0.0/lib/css/zenburn.css">
+
+    <!-- Printing and PDF exports -->
+    <script>
+      var link = document.createElement( 'link' );
+      link.rel = 'stylesheet';
+      link.type = 'text/css';
+      link.href = window.location.search.match( /print-pdf/gi ) ? '/lib/reveal.js-3.0.0/css/print/pdf.css' : '/lib/reveal.js-3.0.0/css/print/paper.css';
+      document.getElementsByTagName( 'head' )[0].appendChild( link );
+    </script>
+
+    <style>
+      body {
+        background: #333;
+        background-color: #333;
+      }
+      .left {
+         width: 33%;
+         float: left;
+      }
+      .clear {
+         clear: both;
+      }
+      .blue {
+        color: #20bfdc;
+      }
+      .reveal .slides {
+        text-align: left;
+      }
+      .reveal a {
+         text-decoration: underline;
+         color: white;
+      }
+      .reveal a:hover {
+         color: white;
+      }
+    </style>
+
+    <!--[if lt IE 9]>
+	<script src="/lib/reveal.js-3.0.0/lib/js/html5shiv.js"></script>
+	<![endif]-->
+  </head>
+
+  <body>
+
+    <div class="reveal">
+
+      <!-- Any section element inside of this container is displayed as a slide -->
+      <div class="slides">
+	<section data-markdown data-separator="---">
+	  <script type="text/template">
+
+## Measurements and Certificate-Based Authentication
+
+<small><a href="http://zappala.byu.edu">Daniel Zappala</a>, Kent Seamons, Mark O'Neill, Scott Ruoti</small>
+
+<small>Brigham Young University</small>
+
+</script>
+</section>
+<section data-markdown data-separator="---" data-background="#3c97b5">
+  <script type="text/template">
+
+* The lock icon in your browser is supposed to mean you have a secure connection to the web site shown
+
+![amazon](figures/amazon.png)
+
+  </script>
+</section>
+<section data-markdown data-separator="---">
+  <script type="text/template">
+
+
+## Authentication with TLS is Fragile
+
+* <span class="blue">Browsers trust too many CAs</span>
+
+* <span class="blue">Poor trust agility</span>
+
+* <span class="blue">Flawed implementations are proliferating</span>: broken libraries [1,2], broken browsers [2], broken mobile apps [3]
+
+* <span class="blue">TLS inspection and man-in-the-middle attacks are occurring</span>: personal/enterprise firewalls, <a href="http://security.stackexchange.com/questions/80662/i-cant-access-websites-that-use-https-instead-getting-the-message-your-connec">ISPs</a> and <a href="https://freedom-to-tinker.com/blog/sjs/how-the-nokia-browser-decrypts-ssl-traffic-a-man-in-the-client/">mobile vendors</a> are <a href="http://arstechnica.com/security/2015/01/gogo-issues-fake-https-certificate-to-users-visiting-youtube/">proxying</a> TLS traffic</a>
+
+<small>
+[1] M. Georgiev, S. Iyengar, S. Jana, R. Anubhai,
+D. Boneh, and V. Shmatikov. The most dangerous code in the world:
+validating ssl certificates in non-browser software. 2012 ACM CCS.
+<br>
+[2] C. Brubaker, S. Jana, B. Ray, S. Khurshid, and V. Shmatikov. Using
+frankencerts for automated adversarial testing of certificate
+validation in SSL/TLS implementations. 2014 IEEE Symposium on Security
+and Privacy (SP).
+<br>
+[3] S. Fahl, M. Harbach, T. Muders, L. Baumgärtner, B. Freisleben,
+and M. Smith. Why eve and mallory love android: An analysis of android
+SSL (in) security. 2012 ACM CCS.
+<br>
+[4] M. O’Neill, S. Ruoti, K. Seamons, and D. Zappala. TLS proxies:
+Friend or foe? In submission.
+<br>
+[5] A. Rice, E. Ellingsen, and C. Jackson. Analyzing Forged SSL Certificates in the
+Wild. 2014 IEEE Symposium on Security and Privacy.
+</small>
+
+</script>
+</section>
+<section data-markdown data-separator="---" data-background="#3c97b5">
+  <script type="text/template">
+
+## State of the Certificate Ecosystem
+
+  </script>
+</section>
+<section data-markdown data-separator="---">
+  <script type="text/template">
+
+## Methods
+
+* <span class="blue">Scans from a single point</span>
+  * Alexa Top 1 million scan [1], EFF full scan [2], ZMap full scan [3]
+* <span class="blue">Passive monitors from one or a few VP</span>
+  * Munich monitors [2], Bro monitors [4]
+* <span class="blue">Mobile apps with thousands of users</span>
+  * Netalyzer [5]
+* <span class="blue">Flash apps with millions of views</span>
+  * deployed on a major web site [6], deployed with a Google ad [7]
+* <span class="blue">User surveys with thousands of users</span> [8]
+
+---
+
+## Ecosystem is Fragile [1]
+
+* 1832 CA certs, 683 orgs
+* Any root or intermediate CA can sign for any site, including CAs controlled
+    by the government in [China, Syria, U.S. ...]
+* 3 orgs sign for 75% of all certs (single point of failure)
+* numerous errors
+
+---
+
+## Detecting attacks is hard [4]
+
+<div class="left">
+![roots](figures/icir-turktrust.png)
+</div>
+<div class="left">
+![roots](figures/icir-foursquare.png)
+</div>
+<div class="left">
+![roots](figures/icir-qq.png)
+</div>
+
+<div class="clear">
+</div>
+<div class="left">
+  <small>*TürkTrust accidentally gave two CA certificates to customers (2013)*
+  </small>
+</div>
+<div class="left">
+  <small>*Valid certs from different roots*</small>
+</div>
+<div class="left">
+  <small>*Valid cert with multiple domains*</small>
+</div>
+<div class="clear">
+</div>
+
+<i class="fi-arrow-right"></i> Legitimate cert changes are very common
+
+---
+
+## Difficult to tell forged certs from valid certs
+
+Common benign behavior:
+
+* multiple valid roots
+* new intermediate CAs
+* country changes (1.3K in one month)
+* overlaps in validity period
+* key sharing
+
+---
+
+
+## Mobile space is wide open
+
+* certs are easy to add to Android devices [5]
+    * manufacturers add them
+  * any third party app can add them without user awareness
+---
+
+## MiTM attacks are happening
+
+* misbehaving intermediate authority (Trustweave) [4]
+* hacked authority (Comodo, DigiNotar) [4]
+* a rogue app [5]
+* personal/enterprise firewalls [6,7]
+* adware/malware/spammers/botnets [6,7]
+---
+
+## User opinions are nuanced [8]
+
+* 65% to 90% accept benevolent uses, such as scanning by employers, schools
+* support for proxies without notification or consent is strongest at elementary
+schools (45.9%) and at businesses when employees are using company-provided computers (47.9%)
+* strongest negative reaction to proxies is for government surveillance
+* 90% want notification and consent
+* personas: pragmatic majority (77%), privacy fundamentalist (17%), jaded (5%), unconcerned (1%)
+---
+## Papers
+<small>
+[1] [A thorough analysis of the X.509 PKI using active and passive
+measurements](http://conferences.sigcomm.org/imc/2011/docs/p427.pdf),
+R. Holz, L. Braun, N. Kammenhuber, and G. Carle. 2011 IMC.
+
+[2] [An observatory for the
+SSLiverse](https://www.eff.org/files/DefconSSLiverse.pdf), P. Eckersley
+and J. Burns. 2010 Talk at Defcon 18.
+
+[3] [Analysis of the HTTPS certificate
+ecosystem](http://conferences.sigcomm.org/imc/2013/papers/imc257-durumericAemb.pdf),
+Z. Durumeric, J. Kasten, M. Bailey, and J. A. Halderman. 2013 IMC.
+
+[4] [No Attack Necessary: The Surprising Dynamics of SSL Trust
+Relationships](http://www.icir.org/johanna/papers/acsac13noattacknecessary.pdf),
+J. Amann, R. Sommer, M. Vallentin, S. Hall. 2013 ACSAC.
+
+[5] [A Tangled Mass: The Android Root Certificate
+Stores](http://www.icir.org/johanna/papers/conext14tangledmass.pdf),
+Narseo Vallina-Rodriguez, Johanna Amann, Christian Kreibich, Nicholas
+  Weaver, and Vern Paxson, 2014 CoNEXT
+
+[6] [Analyzing Forged SSL Certificates in the
+Wild](https://www.linshunghuang.com/papers/mitm.pdf), Huang, Lin Shung,
+Alex Rice, Erling Ellingsen, and Collin Jackson. 2014 IEEE Symposium
+on Security and Privacy
+
+[7] [TLS Proxies Friend or Foe?](http://arxiv.org/abs/1407.7146), Mark O’Neill, Scott Ruoti, Kent Seamons, and Daniel Zappala.
+In submission.
+
+[8] At Least Tell Me: User Attitudes Toward the Inspection of
+Encrypted Traffic, Mark O’Neill, Scott Ruoti, Kent Seamons, and Daniel
+Zappala. In submission.
+
+</small>
+
+</script>
+</section>
+<section data-markdown data-separator="---" data-background="#3c97b5">
+  <script type="text/template">
+
+## Current Work
+
+  </script>
+</section>
+<section data-markdown data-separator="---">
+  <script type="text/template">
+
+## Measurements
+
+* Comprehensive view of certs seen by clients from as many vantage points as possible
+  * measurement testbeds: Dasu/NameHelp, Ark, Atlas (deployment of 100s to 100,000s, can probe any site)
+  * Flash/Google Adwords for non-mobile clients (deployment of millions, can probe only a handful of sites)
+  * Android app for mobile clients (deployment of thousands, can probe any site)
+  * Firefox and Chrome extensions in the works (deployment of ?, can probe any site)
+* Ideally, on same device as user, no user action required
+---
+
+## Proxy Heatmap
+
+![heatmap](figures/heatmap_alternate.png)
+
+<i class="fi-arrow-right"></i> Need more work to get real-time monitoring
+
+---
+
+## Many alternative authentication systems
+  * certificate pinning, notaries (Convergence), DNS (DANE), certificate transp
+arency
+
+## But...
+   * very little deployment
+   * no common platform or API
+
+---
+
+## TrustHub
+
+![architecture](figures/architecture.png)
+
+* simplify deployment of authentication services
+* provide trust agility
+* OS-level protection against proxies
+* Linux and Android
+
+---
+
+## Authentication Services
+
+* curated root store
+* dynamic pinning of certificate bundles
+* crowd-sourced notary service for self-signed certs
+* user authentication (user to device/content)
+
+<i class="fi-arrow-right"></i> Measurements are just another app you've downloaded and authorized
+
+---
+
+## Notifications
+
+* invalid certs (e.g. expired, revoked)
+  * allow exceptions vs always block
+  * could email domain technical contact
+* self-signed certs
+  * a crowd-souced notary can inform whether you should trust it
+  * provide certificate pinning for internal services
+  * Lets Encrypt takes away barriers to signed certs
+* proxies
+  * only allowed via an app you downloaded and authorized (e.g. anti-virus or corporate firewall)
+  * all proxies are prevented by default
+  * provides clear, consistent OS alerts when it is in use
+
+
+---
+
+## Usability
+
+* useful defaults so most users don't need detailed customization
+* actionable warnings for security violations
+  * users tell us they want notification and consent for proxies
+  * a majority of users *don't* proceed through warnings [1,2]
+* requires good design, attention to user experience
+  * [Why Johnny Can't Encrypt, A Usability Evaluation of PGP 5.0](http://www.gaudior.net/alma/johnny.pdf)
+  * we have an email encryption system integrated with Gmail, first to get an "A" (excellent) SUS score, 85th to 90th percentile of a large number of systems evaluated with SUS
+
+<small>
+[1] [Crying Wolf: An Emplirical Study of SSL Warning
+Effectiveness](http://static.usenix.org/legacy/events/sec09/tech/full_papers/sec09_browser.pdf),
+Joshua Sunshine, Serge Egelman, Hazim Almuhimedi, Neha Atri, and
+Lorrie Faith Cranor. 2009 USENIX Security Symposium.
+<br>
+[2] [Alice in Warningland: A Large-scale Field Study of Browser
+Security Warning
+Effectiveness](http://static.googleusercontent.com/media/research.google.com/en/us/pubs/archive/41323.pdf),
+Devdatta Akhawe and Adrienne Porter Felt. 2013 Usenix Security.
+</small>
+
+---
+
+## Daniel Zappala
+
+zappala.byu.edu
+
+zappala@byu.edu
+	  </script>
+
+	</section>
+
+      </div>
+
+    </div>
+
+    <script src="/lib/reveal.js-3.0.0/lib/js/head.min.js"></script>
+    <script src="/lib/reveal.js-3.0.0/js/reveal.js"></script>
+
+    <script>
+
+      // Full list of configuration options available at:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+      controls: true,
+      progress: true,
+      history: true,
+      center: true,
+
+      width: 1200,
+      height: 700,
+
+      transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+      // Optional reveal.js plugins
+      dependencies: [
+      { src: '/lib/reveal.js-3.0.0/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+      { src: '/lib/reveal.js-3.0.0/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+      { src: '/lib/reveal.js-3.0.0/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+      { src: '/lib/reveal.js-3.0.0/plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+      { src: '/lib/reveal.js-3.0.0/plugin/zoom-js/zoom.js', async: true },
+      { src: '/lib/reveal.js-3.0.0/plugin/notes/notes.js', async: true }
+      ]
+      });
+
+
+    </script>
+
+  </body>
+</html>

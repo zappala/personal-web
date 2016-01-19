@@ -1,0 +1,235 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+
+    <title>Users are Not the Enemy</title>
+
+    <meta name="description" content="Users are Not the Enemy">
+    <meta name="author" content="Daniel Zappala">
+
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+    <link rel="stylesheet" href="/lib/foundation-icons/foundation-icons.css">
+    <link rel="stylesheet" href="/lib/reveal.js-3.0.0/css/reveal.css">
+    <link rel="stylesheet" href="/lib/reveal.js-3.0.0/css/theme/black.css" id="theme">
+
+    <!-- Code syntax highlighting -->
+    <link rel="stylesheet" href="/lib/reveal.js-3.0.0/lib/css/zenburn.css">
+
+    <!-- Printing and PDF exports -->
+    <script>
+      var link = document.createElement( 'link' );
+      link.rel = 'stylesheet';
+      link.type = 'text/css';
+      link.href = window.location.search.match( /print-pdf/gi ) ? '/lib/reveal.js-3.0.0/css/print/pdf.css' : '/lib/reveal.js-3.0.0/css/print/paper.css';
+      document.getElementsByTagName( 'head' )[0].appendChild( link );
+    </script>
+
+    <style>
+      body {
+        background: #333;
+        background-color: #333;
+      }
+      .left {
+         width: 33%;
+         float: left;
+      }
+      .clear {
+         clear: both;
+      }
+      .blue {
+        color: #20bfdc;
+      }
+      .reveal .slides {
+        text-align: left;
+      }
+      .reveal a {
+         text-decoration: underline;
+         color: white;
+      }
+      .reveal a:hover {
+         color: white;
+      }
+      .reveal h4 {
+         text-transform: capitalize;
+      }
+    </style>
+
+    <!--[if lt IE 9]>
+	<script src="/lib/reveal.js-3.0.0/lib/js/html5shiv.js"></script>
+	<![endif]-->
+  </head>
+
+  <body>
+
+    <div class="reveal">
+
+      <!-- Any section element inside of this container is displayed as a slide -->
+      <div class="slides">
+	<section data-markdown data-separator="---">
+	  <script type="text/template">
+
+# Users are Not the Enemy
+
+#### Anne Adams & Martina Angela Sasse, Communications of the ACM, Volume 42 Issue 12, Dec. 1999, Pages 40-46 
+
+<small><a href="http://zappala.byu.edu">Daniel Zappala</a></small>
+
+<small>Brigham Young University</small>
+
+</script>
+</section>
+<section data-markdown data-separator="---" data-background="#3c97b5">
+  <script type="text/template">
+
+## Takeaways
+
+* challenges consensus that users are careless and unmotivated
+  when it comes to system security
+
+* users do compromise computer security mechanisms, such as password authentication,
+  but because of security that is poorly implemented or because of their lack of knowledge
+
+
+* security needs user-centered design
+
+  </script>
+</section>
+<section data-markdown data-separator="---">
+  <script type="text/template">
+
+
+## Recommended policies
+
+Intended to prevent password cracking
+
+* size and character set
+
+* frequent changes
+
+* single owner
+
+Users don't follow these recommendations -- why?
+
+<i>Note, frequent password changes are no longer recommended</i>
+
+---
+
+## Survey
+
+* web questionnaire on password-related behaviors (construction, frequency of use, recall, work practices, memorability)
+
+* 139 responses, half from a tech company
+
+* analyzed responses using grounded theory
+---
+
+## Four major factors
+
+affecting effective password usage
+
+* remembering multiple passwords -- 50% wrote passwords down
+
+* inadequate knowledge of effective password rules
+
+* disagreeing with work policies
+
+* unaware of security threats
+
+<i>It is telling that the only user who made the connection cheerfully revealed that he avoided 
+being tracked by using other users’ passwords for certain transactions, so that 
+“...if there’s any problem, they get it in the neck, not you.”</i>
+
+---
+
+## Users lack security knowledge
+
+* rules for creating secure passwords kept hidden
+
+* lack of awareness leads to insecure password practices
+
+* confusion between user IDs and passwords
+
+<i>Would this still be the case today?</i>
+
+---
+
+## User-centered design
+
+* reduce burden of multiple passwords
+
+* eliminate required password changes
+
+<i>I cannot remember my password, I have to write it down, everyone 
+knows it’s on a post-it in my drawer, so I might as well stick it on the screen and tell everyone who wants to know.</i>
+
+---
+
+## Motivating users
+
+<i>It is important to challenge the view that users are never motivated to behave in a 
+secure manner.  Our results show that the majority of users were security-conscious, as long 
+as they perceive the need  for these behaviors, e.g. because of
+ obvious external threats or the perceived sensitivity of the information protected. </i>
+
+</script>
+</section>
+<section data-markdown data-separator="---" data-background="#3c97b5">
+  <script type="text/template">
+
+
+## Recommendations
+
+* provide help constructing secure passwords, including online feedback
+
+* reduce number of passwords users need regularly to 4 or 5
+
+* inform users about threats, detect and challenge users who circumvent security
+
+* align security policies with work practices (e.g. sharing information)
+	  </script>
+
+	</section>
+
+      </div>
+
+    </div>
+
+    <script src="/lib/reveal.js-3.0.0/lib/js/head.min.js"></script>
+    <script src="/lib/reveal.js-3.0.0/js/reveal.js"></script>
+
+    <script>
+
+      // Full list of configuration options available at:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+      controls: true,
+      progress: true,
+      history: true,
+      center: true,
+
+      width: 1200,
+      height: 700,
+
+      transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+      // Optional reveal.js plugins
+      dependencies: [
+      { src: '/lib/reveal.js-3.0.0/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+      { src: '/lib/reveal.js-3.0.0/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+      { src: '/lib/reveal.js-3.0.0/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+      { src: '/lib/reveal.js-3.0.0/plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+      { src: '/lib/reveal.js-3.0.0/plugin/zoom-js/zoom.js', async: true },
+      { src: '/lib/reveal.js-3.0.0/plugin/notes/notes.js', async: true }
+      ]
+      });
+
+
+    </script>
+
+  </body>
+</html>

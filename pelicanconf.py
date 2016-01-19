@@ -46,7 +46,7 @@ TAG_FEED_ATOM = 'feeds/tag-%s.atom.xml'
 
 # Misc
 ARTICLE_PATHS = ['blog']
-STATIC_PATHS = ['images','docs','lib','talks']
+STATIC_PATHS = ['images','docs','lib','talks','summaries']
 DEFAULT_PAGINATION = 10
 
 # Theme

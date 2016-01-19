@@ -1,0 +1,9 @@
+AIMS 2015
+###############################################
+
+:date: 2015-04-1
+:tags: measurement
+:slug: aims-2015
+:author: Daniel Zappala
+
+My slides are here: `AIMS 2015 </talks/certificate-measurement.html>`__
