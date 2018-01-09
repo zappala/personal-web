@@ -9,45 +9,59 @@ Research
 Research
 ========
 
-I am broadly interested in making the Internet work better. This
-includes improving the infrastructure of the Internet (routing and
-transport protocols), enhancing applications (streaming video,
-peer-to-peer networking), and better understanding how we use the
-Internet (measurement, social networking).
+I am broadly interested in making the Internet work better. Currently,
+my interests span the areas of networking, security, and usability,
+with a focus on authentication and usable encryption. Past projects
+have included multicast routing and transport protocols, streaming
+video, peer-to-peer networking, and social networking.
 
 Current Projects
 ----------------
 
-`Web Security <http://internet.byu.edu/research/web-security>`__: Measuring
-the prevalence of TLS proxies and designing tools to detect them and notify
-users. We will be designing new web authentication methods to provide
-improved trust on the Internet.
+`TrustBase <http://internet.byu.edu/research/trustbase>`__: TrustBase
+is an architecture that provides certificate-based authentication as
+an operating system service.  TrustBase enforces best practices for
+certificate validation for all applications and transparently enables
+existing applications to be strengthened against failures of the CA
+system.
+
+.. image:: /images/trustbase-architecture.png
+   :width: 400
+
+`TLS Proxies <http://internet.byu.edu/research/tls-proxies>`__: We
+have been measuring the prevalence of TLS proxies using a tool we
+deployed with a Google AdWords campaign.  We have also conducted
+surveys to understand user attitudes and preferences toward the
+inspection of encrypted traffic.
 
 .. image:: /images/tls-proxy-measurement.png
    :width: 400
 
-`Personal Cloud Computing
-<http://internet.byu.edu/research/personal-cloud>`__: Designing a
-personal cloud system that transparently organizes all of the files on
-your mobile and home computing devices.
+`Cloud Storage <http://internet.byu.edu/research/cloud-storage>`__: We
+have been studying user perceptions and behavior with respect to cloud
+storage services. In particular, we are interested in behaviors such
+as which services are used, what types of data are stored, and how
+collaboration and sharing are performed. We are also investigating
+user attitudes toward cloud storage on topics such as payment, pri-
+vacy, security, and robustness.
 
-.. image:: /images/cloud-vision.png
-   :alt: Personal Cloud Computing
-   :width: 400
+`Steam Measurements
+<http://internet.byu.edu/research/steam-measurements>`__: We have
+conducted a comprehensive measurement study of the Steam gaming
+network, one of the largest gaming networks in the world. Unlike
+previous studies that have relied on sampling techniques, our study is
+the first complete examination of a major gaming network, measuring
+all 108.7 million user accounts and 384.3 million owned games. We
+examine gamer behavior across the dimensions of social connectivity,
+playtime, game ownership, genre affinity, and monetary expenditure.
 
-`Sentiment Analysis
-<http://internet.byu.edu/research/sentiment-analysis>`__: Exploring
-how to automatically classify the political sentiment of tweets, so
-that we can better quantify political feelings of people around the
-world and track their changes over time.
-
-.. image:: /images/sentiment-us.png
-   :alt: Political Sentiment Analysis
+.. image:: /images/steam-friend-graph-sampled.png
    :width: 400
 
 Past Research
 -------------
 
-Past research topics include wireless networks, streaming video
-algorithms, peer-to-peer networking, and multicast routing. See
-`Publications <|filename|publications.rst>`__ for more details.
+Past research topics include sentiment analysis, wireless networks,
+streaming video algorithms, peer-to-peer networking, and multicast
+routing. See `Publications <|filename|publications.rst>`__ for more
+details.

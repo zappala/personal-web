@@ -38,18 +38,20 @@ measurements and other Internet research areas.
 Mentoring
 =========
 
-I typically mentor teams of students interested in working on open
-source software, through either CS 598R or CS 428. In past semesters,
-this has led to the 20 Minute Genealogist project (now `Kinpoint
-<http://kinpoint.com>`__), `leaf <http://leaf.byu.edu>`__,
-and `Citizen Budget <http://citizenbudget.org>`__. I run the `BYU Open
-Source Lab <http://osl.byu.edu>`__ to coordinate these activities.
+I often mentor undergraduate students interested in working on
+research projects.  We can now offer credit for a semester of
+undergraduate research, and sometimes have funding to pay students as
+well. In past semesters I mentored students on open source projects,
+including the 20 Minute Genealogist project (now `Kinpoint
+<http://kinpoint.com>`__), `leaf <http://leaf.byu.edu>`__, and
+`Citizen Budget <http://citizenbudget.org>`__.
 
 Past Classes
 ============
 
 `CS 601 Special Topics <http://ilab.cs.byu.edu/cs601>`__: Graduate
-courses on `Social Networking <http://ilab.cs.byu.edu/cs601/2013w>`__,
+courses on `Usability Research <https://wiki.cs.byu.edu/cs-601r-usability/start>`__,
+`Social Networking <http://ilab.cs.byu.edu/cs601/2013w>`__,
 `Wireless Mesh Networks <http://ilab.cs.byu.edu/cs601/2010w>`__, and
 `Peer-to-Peer Networking <http://ilab.cs.byu.edu/cs601/2005w>`__.
 

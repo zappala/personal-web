@@ -18,31 +18,54 @@ appointment if you need extended time.
 
 **Monday**
 
-  :fw:`8:00` CS 360
+  :fw:`9:00` CS 660
 
-  :fw:`11:00` TrustBase
+  :fw:`10:00` CS 460
+
+  :fw:`11:00` Kent
+
+  :fw:`1:00` Elham
+
+  :fw:`2:00` Justin
+
+  :fw:`3:00` Scott
 
 **Tuesday**
 
-  :fw:`8:00` CS 360
-
   :fw:`11:00` Devotional
+
+  :fw:`3:00` Jordan
+
+  :fw:`6:00` Cedar Hills City Council Meeting
 
 **Wednesday**
 
-  :fw:`8:00` CS 360
+  :fw:`9:00` CS 660
 
-  :fw:`11:00` Secure Email
+  :fw:`10:00` CS 460
+
+  :fw:`11:00` TrustBase
 
 **Thursday**
 
-  :fw:`8:00` CS 360
+  :fw:`7:00` LPPSD Board Meeting
+
+  :fw:`10:00` Kent
 
   :fw:`11:00` Colloquium
 
+  :fw:`2:00` Elham
+
+  :fw:`3:00` Mark
+
 **Friday**
 
-  :fw:`8:00` Working from Home
+  :fw:`9:00` CS 660
 
+  :fw:`10:00` CS 460
 
+  :fw:`11:00` SoK
 
+  :fw:`12:00` SoK
+
+  :fw:`1:00` CHI Council
