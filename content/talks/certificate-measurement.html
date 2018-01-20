@@ -13,22 +13,11 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
 
-    <link rel="stylesheet" href="/lib/foundation-icons/foundation-icons.css">
-    <link rel="stylesheet" href="/lib/reveal.js-3.0.0/css/reveal.css">
-    <link rel="stylesheet" href="/lib/reveal.js-3.0.0/css/theme/black.css" id="theme">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/css/reveal.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/css/theme/black.min.css">
 
-    <!-- Code syntax highlighting -->
-    <link rel="stylesheet" href="/lib/reveal.js-3.0.0/lib/css/zenburn.css">
-
-    <!-- Printing and PDF exports -->
-    <script>
-      var link = document.createElement( 'link' );
-      link.rel = 'stylesheet';
-      link.type = 'text/css';
-      link.href = window.location.search.match( /print-pdf/gi ) ? '/lib/reveal.js-3.0.0/css/print/pdf.css' : '/lib/reveal.js-3.0.0/css/print/paper.css';
-      document.getElementsByTagName( 'head' )[0].appendChild( link );
-    </script>
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/lib/css/zenburn.min.css">
+    
     <style>
       body {
         background: #333;
@@ -56,9 +45,6 @@
       }
     </style>
 
-    <!--[if lt IE 9]>
-	<script src="/lib/reveal.js-3.0.0/lib/js/html5shiv.js"></script>
-	<![endif]-->
   </head>
 
   <body>
@@ -68,7 +54,7 @@
       <!-- Any section element inside of this container is displayed as a slide -->
       <div class="slides">
 	<section data-markdown data-separator="---">
-	  <script type="text/template">
+	  <textarea data-template>
 
 ## Measurements and Certificate-Based Authentication
 
@@ -76,20 +62,19 @@
 
 <small>Brigham Young University</small>
 
-</script>
+</textarea>
 </section>
-<section data-markdown data-separator="---" data-background="#3c97b5">
-  <script type="text/template">
+	<section data-markdown data-separator="---" data-background="#3c97b5">
+	  <textarea data-template>
 
 * The lock icon in your browser is supposed to mean you have a secure connection to the web site shown
 
 ![amazon](figures/amazon.png)
 
-  </script>
+</textarea>
 </section>
 <section data-markdown data-separator="---">
-  <script type="text/template">
-
+  <textarea data-template>
 
 ## Authentication with TLS is Fragile
 
@@ -122,17 +107,17 @@ Friend or foe? In submission.
 Wild. 2014 IEEE Symposium on Security and Privacy.
 </small>
 
-</script>
+</textarea>
 </section>
 <section data-markdown data-separator="---" data-background="#3c97b5">
-  <script type="text/template">
+  <textarea data-template>
 
 ## State of the Certificate Ecosystem
 
-  </script>
+  </textarea>
 </section>
 <section data-markdown data-separator="---">
-  <script type="text/template">
+  <textarea data-template>
 
 ## Methods
 
@@ -264,17 +249,17 @@ Zappala. In submission.
 
 </small>
 
-</script>
+</textarea>
 </section>
 <section data-markdown data-separator="---" data-background="#3c97b5">
-  <script type="text/template">
+  <textarea data-template>
 
 ## Current Work
 
-  </script>
+  </textarea>
 </section>
 <section data-markdown data-separator="---">
-  <script type="text/template">
+  <textarea data-template>
 
 ## Measurements
 
@@ -372,7 +357,7 @@ Devdatta Akhawe and Adrienne Porter Felt. 2013 Usenix Security.
 zappala.byu.edu
 
 zappala@byu.edu
-	  </script>
+</textarea>
 
 	</section>
 
@@ -380,13 +365,12 @@ zappala@byu.edu
 
     </div>
 
-    <script src="/lib/reveal.js-3.0.0/lib/js/head.min.js"></script>
-    <script src="/lib/reveal.js-3.0.0/js/reveal.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/js/reveal.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/plugin/markdown/marked.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/plugin/markdown/markdown.js"></script>
 
     <script>
-
-      // Full list of configuration options available at:
-      // https://github.com/hakimel/reveal.js#configuration
       Reveal.initialize({
       controls: true,
       progress: true,
@@ -398,15 +382,6 @@ zappala@byu.edu
 
       transition: 'slide', // none/fade/slide/convex/concave/zoom
 
-      // Optional reveal.js plugins
-      dependencies: [
-      { src: '/lib/reveal.js-3.0.0/lib/js/classList.js', condition: function() { return !document.body.classList; } },
-      { src: '/lib/reveal.js-3.0.0/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-      { src: '/lib/reveal.js-3.0.0/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-      { src: '/lib/reveal.js-3.0.0/plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
-      { src: '/lib/reveal.js-3.0.0/plugin/zoom-js/zoom.js', async: true },
-      { src: '/lib/reveal.js-3.0.0/plugin/notes/notes.js', async: true }
-      ]
       });
 
 
