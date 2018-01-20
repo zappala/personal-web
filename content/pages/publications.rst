@@ -18,6 +18,32 @@ You can also view my `full vita </pubs/vita.pdf>`__.
 Conferences and Workshops
 -------------------------
 
+- Scott Ruoti, Kent Seamons, and Daniel Zappala. `Layering Security at
+  Global Control Points to Secure Unmodified Software
+  <https://isrl.byu.edu/pubs/secdev2017.pdf>`__, IEEE Secure
+  Development Conference (IEEE SecDev), September 2017. Best Paper
+  Award.
+
+- Mark O'Neill, Scott Heidbrink, Scott Ruoti, Jordan Whitehead, Dan
+  Bunker, Luke Dickinson, Travis Hendershot, Joshua Reynolds, Kent
+  Seamons, and Daniel Zappala, `TrustBase: An Architecture to Repair
+  and Strengthen Certificate-based Authentication
+  </pubs/trustbase-usenix-security-2017.pdf>`__, USENIX Security,
+  August 2017.
+  
+- Elham Vaziripour, Justin Wu, Mark O'Neill, Ray Clinton, Jordan
+  Whitehead, Scott Heidbrink, Kent Seamons, Daniel Zappala, `Is that
+  you, Alice? A Usability Study of the Authentication Ceremony of
+  Secure Messaging Applications </pubs/alice-soups-2017.pdf>`__,
+  USENIX Symposium on Usable Privacy and Security (SOUPS), July 2017.
+  
+- Scott Ruoti, Tyler Monson, Justin Wu, Daniel Zappala, and Kent
+  Seamons, Brigham Young University, `Weighing Context and Trade-offs:
+  How Suburban Adults Selected Their Online Security Posture
+  <https://www.usenix.org/system/files/conference/soups2017/soups2017-ruoti.pdf>`__,
+  USENIX Symposium on Usable Privacy and Security (SOUPS), July
+  2017.
+
 - Mark O'Neill, Scott Ruoti, Kent Seamons, Daniel Zappala,  `TLS
   Proxies: Friend or Foe? </pubs/tls-proxies-imc-2016.pdf>`__, ACM
   Internet Measurement Conference, November, 2016.

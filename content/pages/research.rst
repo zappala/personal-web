@@ -28,6 +28,21 @@ system.
 .. image:: /images/trustbase-architecture.png
    :width: 400
 
+`Usable Authentication Ceremonies
+<https://internet.byu.edu/research/alice>`__: Most popular secure
+messaging applications are usable because they hide many of the
+details of how encryption is provided. However, the strength of the
+security properties of these applications rests on the authentication
+ceremony, in which users validate the encryption keys being
+used. Unfortunately, recent studies show that most users do not know
+how to successfully complete this ceremony and are thus vulnerable to
+potential attacks. We are studying methods to improve the usability of
+the authentication ceremony, so that it is easy for users to locate
+and complete the ceremony.
+
+.. image:: /images/whatsapp-verification.png
+   :width: 200	   
+
 `TLS Proxies <http://internet.byu.edu/research/tls-proxies>`__: We
 have been measuring the prevalence of TLS proxies using a tool we
 deployed with a Google AdWords campaign.  We have also conducted
@@ -37,31 +52,10 @@ inspection of encrypted traffic.
 .. image:: /images/tls-proxy-measurement.png
    :width: 400
 
-`Cloud Storage <http://internet.byu.edu/research/cloud-storage>`__: We
-have been studying user perceptions and behavior with respect to cloud
-storage services. In particular, we are interested in behaviors such
-as which services are used, what types of data are stored, and how
-collaboration and sharing are performed. We are also investigating
-user attitudes toward cloud storage on topics such as payment, pri-
-vacy, security, and robustness.
-
-`Steam Measurements
-<http://internet.byu.edu/research/steam-measurements>`__: We have
-conducted a comprehensive measurement study of the Steam gaming
-network, one of the largest gaming networks in the world. Unlike
-previous studies that have relied on sampling techniques, our study is
-the first complete examination of a major gaming network, measuring
-all 108.7 million user accounts and 384.3 million owned games. We
-examine gamer behavior across the dimensions of social connectivity,
-playtime, game ownership, genre affinity, and monetary expenditure.
-
-.. image:: /images/steam-friend-graph-sampled.png
-   :width: 400
-
 Past Research
 -------------
 
-Past research topics include sentiment analysis, wireless networks,
-streaming video algorithms, peer-to-peer networking, and multicast
-routing. See `Publications <|filename|publications.rst>`__ for more
-details.
+Past research topics include measurements of the Steam game network,
+cloud storage, sentiment analysis, wireless networks, streaming video
+algorithms, peer-to-peer networking, and multicast routing. See
+`Publications <|filename|publications.rst>`__ for more details.

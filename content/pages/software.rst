@@ -25,6 +25,13 @@ Code is developed through the `Internet Research Lab
 Network Research
 ----------------
 
+`TrustBase <http://internet.byu.edu/research/trustbase>`__: TrustBase
+is an architecture that provides certificate-based authentication as
+an operating system service.  TrustBase enforces best practices for
+certificate validation for all applications and transparently enables
+existing applications to be strengthened against failures of the CA
+system.
+
 `WiFu <https://github.com/zappala/wifu>`__: A composable toolkit for
 experimental wireless transport protocols, from the `WiFu
 <http://internet.byu.edu/research/wifu>`__ project. Designed to help

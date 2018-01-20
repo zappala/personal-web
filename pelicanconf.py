@@ -10,7 +10,7 @@ SITENAME = u'Daniel Zappala'
 SITEURL = 'https://zappala.byu.edu'
 
 # Contact info
-EMAIL = 'daniel.zappala@gmail.com'
+EMAIL = 'zappala@cs.byu.edu'
 GITHUB_URL = 'https://github.com/zappala'
 GOOGLEPLUS_URL = 'https://plus.google.com/114449822521576560110?prsrc=3'
 TWITTER_URL = 'https://twitter.com/Daniel_Zappala'
@@ -21,11 +21,10 @@ PHONE = '801-422-2195'
 
 # Customization
 LINKS_LABEL = 'Director:'
-LINKS = [('Internet Research Lab','https://internet.byu.edu'),
-         ('BYU Open Source Lab','https://osl.byu.edu')]
+LINKS = [('Internet Research Lab','https://internet.byu.edu')]
 
 LICENSE = '<a rel="license" href="https://creativecommons.org/licenses/by-sa/3.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/3.0/88x31.png" /></a>'
-COPYRIGHT = '2013 Daniel Zappala'
+COPYRIGHT = ''
 
 TIMEZONE = 'US/Mountain'
 DEFAULT_LANG = u'en'

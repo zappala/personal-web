@@ -7,7 +7,7 @@ Home
 :save_as: index.html
 :author: Daniel Zappala
 
-Teaching and Research
+Research
 =====================
 
 I direct the `Internet Research Lab <http://internet.byu.edu>`__,
@@ -16,39 +16,49 @@ of our research is done jointly with the `Internet Security Research
 Lab <http://isrl.byu.edu>`__, led by Kent Seamons. We are often
 looking for good undergraduate and graduate students interested in
 solving challenging problems in this area; please feel free to contact
-one of us if you are interested. See my `research page
-<|filename|research.rst>`__ for more details.
+me if you are interested, using my email address on the left. See my
+`research page <|filename|research.rst>`__ for more details.
 
-I currently teach courses in Web Programming and Computer Networking,
-and previously taught Internet Programming for many years. See my
-`teaching page <|filename|teaching.rst>`__ for more details.
+Teaching
+=====================
+
+For many years I have taught courses in Computer Networking and
+Internet Programming. Recently I have begun teaching Web Programming
+and will start teaching courses in Security.  See my `teaching page
+<|filename|teaching.rst>`__ for more details.
 
 
-Open Source Software
-====================
+Open Source Software and Research Artifacts
+===========================================
 
 I am a regular user and writer of open source software. I run Linux
 natively on all my systems and have spent a number of years mentoring
-students in the `BYU Open Source Lab <http://osl.byu.edu>`__. I
-believe creating open source software -- both in my research and in
-service to the community -- is at the heart of `BYU's mission
+students in independent open source projects. I believe creating open
+source software -- both in my research and in service to the community
+-- is at the heart of `BYU's mission
 <http://aims.byu.edu/p/missionstatement>`__.
 
-One of the applications we built is called `Citizen Budget
-<http://citizenbudget.org>`__, which helps provide budget transparency
-for cities. It is currently in use by my city, Cedar Hills.  Another
-application we run is called `leaf <http://leaf.byu.edu>`__, which
-downloads your genealogy from `FamilySearch
-<http://familysearch.org>`__ and show you were additional work needs
-to be done.
+I am a strong believer that all scientists should publish their
+research artifacts with every publication. This includes releasing
+source code, documentation, data, scripts, user-study guides, survey
+text, and so forth. We are increasing our efforts to provide all
+materials needed to replicate our research whenever we publish a
+paper.
 
-Community Service
-=================
 
-I serve on the city council of `Cedar Hills
-<http://cedarhills.org>`__, where my responsibilities having included finances,
-technology, and open government. I also sit on the board for the Lone Peak Public Safety District,
-which includes the `Lone Peak Police <http://www.lonepeakpolice.com/>`__ and `Lone Peak Fire <http://lonepeakfire.com/>`__ Departments.
+Professional and Community Service
+==================================
+
+I currently serve as the Publicity Coordinator for ACSAC.  In the past
+I have served on the Technical Program Commitee for NOSSDAV, IFIP
+Networking, and IEEE Infocom for a number of years. I have also
+chaired the Family History Technology Workshop.
+
+I served on the planning commission and city council of `Cedar Hills
+<http://cedarhills.org>`__ for a combined seven years. I also spent several
+years on the board of the Lone Peak Public Safety District and
+Utah Valley Dispatch. If you are at all interested in serving
+politically, I would be happy to talk to you about it.
 
 Reforming Software Patents
 ==========================

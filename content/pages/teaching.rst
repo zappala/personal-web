@@ -50,7 +50,8 @@ Past Classes
 ============
 
 `CS 601 Special Topics <http://ilab.cs.byu.edu/cs601>`__: Graduate
-courses on `Usability Research <https://wiki.cs.byu.edu/cs-601r-usability/start>`__,
+courses on `Advanced Operating Systems <https://cs601.internet.byu.edu/fall-2017/>`__, 
+`Usability Research <https://wiki.cs.byu.edu/cs-601r-usability/start>`__,
 `Social Networking <http://ilab.cs.byu.edu/cs601/2013w>`__,
 `Wireless Mesh Networks <http://ilab.cs.byu.edu/cs601/2010w>`__, and
 `Peer-to-Peer Networking <http://ilab.cs.byu.edu/cs601/2005w>`__.
