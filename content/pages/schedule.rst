@@ -18,54 +18,48 @@ appointment if you need extended time.
 
 **Monday**
 
-  :fw:`9:00` CS 660
-
   :fw:`10:00` CS 460
+    
+  :fw:`11:00` Justin
 
-  :fw:`11:00` Kent
+  :fw:`1:00` CS 260
 
-  :fw:`1:00` Elham
-
-  :fw:`2:00` Justin
-
-  :fw:`3:00` Scott
+  :fw:`2:00` CS 260
 
 **Tuesday**
 
+  :fw:`8:00` Elham
+
   :fw:`11:00` Devotional
 
-  :fw:`3:00` Jordan
-
-  :fw:`6:00` Cedar Hills City Council Meeting
-
+  :fw:`1:00` CS 260 TA Meeting
+    
 **Wednesday**
-
-  :fw:`9:00` CS 660
 
   :fw:`10:00` CS 460
 
-  :fw:`11:00` TrustBase
+  :fw:`11:00` Graduate Committee
+
+  :fw:`1:00` CS 260
+
+  :fw:`2:00` CS 260
 
 **Thursday**
 
-  :fw:`7:00` LPPSD Board Meeting
-
-  :fw:`10:00` Kent
+  :fw:`9:00` Justin
 
   :fw:`11:00` Colloquium
 
-  :fw:`2:00` Elham
+  :fw:`1:00` Matt Holt
 
-  :fw:`3:00` Mark
+  :fw:`2:00` ACSAC (second Thursday)
 
 **Friday**
 
-  :fw:`9:00` CS 660
+  :fw:`8:00` Email
 
   :fw:`10:00` CS 460
 
-  :fw:`11:00` SoK
+  :fw:`1:00` CS 260
 
-  :fw:`12:00` SoK
-
-  :fw:`1:00` CHI Council
+  :fw:`2:00` CS 260
